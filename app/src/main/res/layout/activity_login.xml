@@ -29,7 +29,7 @@
                     android:layout_gravity="center"
                     android:layout_marginTop="8dp"
                     android:layout_marginBottom="100dp"
-                    android:text="Sing Up"
+                    android:text="Log In"
                     android:textColor="@color/lavender"
                     android:textSize="34dp"
 
@@ -45,7 +45,9 @@
                     android:drawablePadding="8dp"
                     android:hint="Email"
                     android:padding="8dp"
-                    android:inputType="textEmailAddress" />
+                    android:inputType="textEmailAddress"
+                    android:textColor="@color/black"
+                    />
 
                 <EditText
                     android:id="@+id/login_password"
@@ -58,6 +60,7 @@
                     android:hint="Password"
                     android:padding="8dp"
                     android:inputType="textPassword"
+                    android:textColor="@color/black"
                     />
 
                 <Button
@@ -65,19 +68,9 @@
                     android:layout_width="350dp"
                     android:layout_height="60dp"
                     android:layout_marginTop="30dp"
-                    android:text="Sign Up"
+                    android:text="LOG IN"
                     android:textSize="18dp"
                     app:cornerRadius="30dp" />
-
-                <TextView
-                    android:id="@+id/SignupRedirectText"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginTop="8dp"
-                    android:text="Not a member? Sign up here"
-                    android:textColor="@color/lavender"
-                    android:textSize="18dp" />
 
             </LinearLayout>
         </LinearLayout>

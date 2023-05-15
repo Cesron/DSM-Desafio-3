@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CarActivity">
+
+
+    <!--Car information title-->
+
+
+    <TextView
+        android:id="@+id/car_info_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="110dp"
+        android:text="Car Information"
+        android:textColor="@color/lavender"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        />
+
+    <!-- Car information and button to add to favorites -->
+
+    <TextView
+        android:id="@+id/brand_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="Brand: "
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.254" />
+
+    <TextView
+        android:id="@+id/brand_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="Brand"
+        android:textColor="#000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/brand_label"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.254" />
+
+    <!-- New row model label and txt -->
+
+    <TextView
+        android:id="@+id/model_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="Model: "
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/brand_label" />
+
+    <TextView
+        android:id="@+id/model_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="Model"
+        android:textColor="#000"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/model_label"
+        app:layout_constraintTop_toBottomOf="@+id/brand_txt" />
+
+    <!-- New row year label and txt -->
+
+    <TextView
+        android:id="@+id/year_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="Year: "
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/model_label" />
+
+    <TextView
+        android:id="@+id/year_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="Year"
+        android:textColor="#000"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/year_label"
+        app:layout_constraintTop_toBottomOf="@+id/model_txt" />
+
+    <!-- New row price label and txt -->
+
+    <TextView
+        android:id="@+id/price_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="Price: "
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/year_label" />
+
+    <TextView
+        android:id="@+id/price_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="Price"
+        android:textColor="#000"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/price_label"
+        app:layout_constraintTop_toBottomOf="@+id/year_txt" />
+
+    <!-- New row color label and txt -->
+
+    <TextView
+        android:id="@+id/color_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="Color: "
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/price_label" />
+
+    <TextView
+        android:id="@+id/color_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="Color"
+        android:textColor="#000"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/color_label"
+        app:layout_constraintTop_toBottomOf="@+id/price_txt" />
+
+    <!-- New row vin label and txt -->
+
+    <TextView
+        android:id="@+id/vin_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="VIN: "
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/color_label" />
+
+
+    <TextView
+        android:id="@+id/vin_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="VIN"
+        android:textColor="#000"
+        android:textSize="20sp"
+
+        app:layout_constraintStart_toEndOf="@+id/vin_label"
+        app:layout_constraintTop_toBottomOf="@+id/color_txt" />
+
+    <!-- New row chassis label and txt -->
+
+    <TextView
+        android:id="@+id/chassis_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="Chassis: "
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vin_label" />
+
+    <TextView
+        android:id="@+id/chassis_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="Chassis"
+        android:textColor="#000"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/chassis_label"
+        app:layout_constraintTop_toBottomOf="@+id/vin_txt" />
+
+    <!-- New row Motor label and txt -->
+
+    <TextView
+        android:id="@+id/motor_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="Motor: "
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chassis_label" />
+
+    <TextView
+        android:id="@+id/motor_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="Motor"
+        android:textColor="#000"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/motor_label"
+        app:layout_constraintTop_toBottomOf="@+id/chassis_txt" />
+
+    <!-- New row Seats label and txt -->
+
+    <TextView
+        android:id="@+id/seats_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="Seats: "
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/motor_label" />
+
+    <TextView
+        android:id="@+id/seats_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="Seats"
+        android:textColor="#000"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/seats_label"
+        app:layout_constraintTop_toBottomOf="@+id/motor_txt" />
+
+    <!-- Add to favorites button -->
+
+    <Button
+        android:id="@+id/add_fav_button"
+        android:layout_width="320dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="40dp"
+        android:text="Add to Favorites"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@+id/seats_txt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

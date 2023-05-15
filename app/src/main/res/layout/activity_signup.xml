@@ -24,7 +24,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="8dp"
-                android:text="Sing Up"
+                android:text="Add New User"
                 android:textColor="@color/lavender"
                 android:textSize="34dp"
                 android:layout_marginBottom="100dp"
@@ -41,6 +41,7 @@
                 android:drawablePadding="8dp"
                 android:hint="Email"
                 android:padding="8dp"
+                android:textColor="@color/black"
                 android:inputType="textEmailAddress" />
 
             <EditText
@@ -53,6 +54,7 @@
                 android:drawablePadding="8dp"
                 android:hint="Password"
                 android:padding="8dp"
+                android:textColor="@color/black"
                 android:inputType="textPassword" />
 
             <EditText
@@ -63,28 +65,30 @@
                 android:background="@drawable/lavender_border"
                 android:drawableLeft="@drawable/baseline_password_24"
                 android:drawablePadding="8dp"
-                android:hint="Email"
+                android:hint="Confirm Password"
                 android:padding="8dp"
+                android:textColor="@color/black"
                 android:inputType="textPassword" />
+
+            <Spinner
+                android:id="@+id/signup_role"
+                android:layout_width="350dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/lavender_border"
+                android:drawablePadding="8dp"
+                android:padding="8dp"
+                android:entries="@array/menuOptions" />
 
             <Button
                 android:id="@+id/signup_button"
                 android:layout_width="350dp"
                 android:layout_height="60dp"
                 android:layout_marginTop="30dp"
-                android:text="Sign Up"
+                android:text="Add New User"
                 android:textSize="18dp"
                 app:cornerRadius="30dp" />
 
-            <TextView
-                android:id="@+id/loginRedirectText"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="8dp"
-                android:text="Already have an account? Login"
-                android:textColor="@color/lavender"
-                android:textSize="18dp" />
 
         </LinearLayout>
     </LinearLayout>

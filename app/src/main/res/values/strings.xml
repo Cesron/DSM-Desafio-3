@@ -1,3 +1,7 @@
 <resources>
-    <string name="app_name">DSM-Desafio-3</string>
+    <string name="app_name">DSM-3</string>
+    <string-array name="menuOptions">
+        <item>Client</item>
+        <item>Admin</item>
+    </string-array>
 </resources>
